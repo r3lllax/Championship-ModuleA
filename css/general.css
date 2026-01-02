@@ -1,7 +1,23 @@
 :root{
+    /* Primary */
     --primary-accent:#7B61FF;
     --primary-hover:#6A52E5;
     --primary-active:#5A44C7;
+
+    /* Background */
+    --bg-main:#0F1220;
+    --bg-card:#171B2E;
+    --bg-footer:#0B0E1A;
+
+    /* Text */
+    --text-primary:#fff;
+    --text-secondary:#A0A4C3;
+    --text-muted:#6F7396;
+
+    /* Statuses */
+    --status-success:#0add69;
+    --status-error:#FF4D4F;
+    --status-warning:#FFB020;
 }
 header{
     width: 100%;
@@ -9,17 +25,47 @@ header{
     display: flex;
     justify-content: center;
     padding: 20px 20px 20px 20px;
-    border: 1px solid black;
+    border-bottom: 1px solid black;
+    background: var(--bg-card);
 }
 body{
     margin: 0;
     padding: 0;
-    background-color: var(--primary-accent);
+    background-color: var(--bg-main);
 }
 
 .href-button{
     outline: none;
     border: none;
     background: none;
-    color: var(--primary-accent);
+    color: var(--text-primary);
+}
+.button{
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: #fff;
+}
+.input{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+}
+.input::placeholder{
+    color: var(--text-muted);
+}
+
+.success{
+    background-color: var(--status-success);
+}
+
+.error{
+    background-color: var(--status-error);
+}
+
+.warning{
+
 }
