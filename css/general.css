@@ -1,0 +1,25 @@
+:root{
+    --primary-accent:#7B61FF;
+    --primary-hover:#6A52E5;
+    --primary-active:#5A44C7;
+}
+header{
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    padding: 20px 20px 20px 20px;
+    border: 1px solid black;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: var(--primary-accent);
+}
+
+.href-button{
+    outline: none;
+    border: none;
+    background: none;
+    color: var(--primary-accent);
+}

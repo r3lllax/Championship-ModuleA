@@ -1,0 +1,19 @@
+.bg{
+    background: #000;
+    color: white;
+}
+.header-logo{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+}
+.header-buttons{
+    width: 40%;
+}
+.header-user{
+    width: 30%;
+}
+.header-user_profile{
+    color: #000;
+    text-decoration: none;
+}
