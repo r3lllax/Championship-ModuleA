@@ -69,7 +69,6 @@
 }
 
 .search{
-    width: 50%;
     display: flex;
 }
 
@@ -103,4 +102,118 @@
     background-color: var(--primary-accent);
     border-top-left-radius: 0px;
     border-bottom-left-radius: 0px;
+}
+
+.advantages{
+    padding: 10px 10px 10px 10px !important;
+    display: flex;
+    justify-content: center;
+    color: var(--text-primary);
+    border: 1px solid var(--text-muted);
+    border-right: none;
+    border-left: none;  
+
+}
+
+.advantages-item{
+    border-left: 1px solid var(--text-muted);
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.advantages-item:first-child{
+    border-left: none;
+}
+.advantages-item_image img{
+    width: 48px;
+    height: 48px;
+}
+
+.popular-games{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.popular-games_head{
+    display: flex;
+    justify-content: space-between;
+}
+.popular-games_head-buttons{
+    display: flex;
+    gap: 5px;
+}
+
+.popular-games_games{
+    display: flex;
+    gap: 20px;
+    width: 100%;
+}
+
+.popular-games_games-item{
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 20%;
+    flex-basis: 25%;
+    background-color: var(--bg-card);
+    border-radius: 10px;
+}
+
+.popular-games_games-item_volume{
+    img{
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+}
+.popular-games_games-item_content{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.popular-games_games-item_content-info{
+    display: flex;
+    justify-content: space-between;
+}
+
+.popular-games_games-item_content-rating_rating{
+    display: flex;
+    gap: 5px;
+}
+.popular-games_games-item_content-rating{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.popular-games_games-item_content-rating_rating-star{
+    img{
+        width: 15px;
+        height: 15px;
+    }
+}
+.popular-games_games-item_content-info_price{
+    color: var(--status-success);
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.popular-games_games-item_content-studio{
+    color: var(--text-muted);
+}
+
+.popular-games_games-item_content-rating{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-top: 1px solid var(--text-muted);
+}
+.catalog-button{
+    background-color: var(--primary-accent);
 }
