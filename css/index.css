@@ -1,60 +1,3 @@
-.bg{
-    background: #000;
-    color: white;
-}
-.header-logo{
-    width: 30%;
-    display: flex;
-    justify-content: center;
-}
-.header-buttons{
-    width: 40%;
-    display: flex;
-    gap: 20px;
-}
-.header-user{
-    width: 30%;
-}
-.header-user_profile{
-    color: #000;
-    text-decoration: none;
-
-    .button{
-        font-weight: bold;
-    }
-}
-
-
-.header-buttons_active{
-    position: relative;
-}
-.header-buttons_active::before{
-    content: "";
-    position: absolute;
-    bottom: 0;
-    transform: translateY(1200%);
-    width: 90%;
-    height: 2px;
-    background-color: var(--primary-hover);
-}
-
-.header-buttons_search{
-    position: relative;
-}
-
-.header-buttons_search::after{
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 0;
-    right: -10px;
-    top: 10px;
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
-    border-top: 5px solid #fff;
-}
-
-
 .main{
     width: 100%;
     display: flex;
@@ -66,6 +9,72 @@
     align-items: center;
     flex-direction: column;
     color: var(--text-primary);
+}
+.bgw{
+    background: #fff;
+}
+
+.slider{
+    background: url('/images/EldenRing21x9.jpg');
+    object-fit: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.slider-game{
+    padding-left: 50px;
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+}
+
+.slider-game_name{
+    background: url('/images/Elden-Ring-Logo.png');
+    background-size: cover;
+    background-position:left;
+    background-repeat: no-repeat;
+    width: 350px;
+    height: 100px;
+}
+.slider-game_price{
+    color: var(--status-success);
+    padding-left: 15px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.slider-game_more{
+    padding-left: 15px;
+}
+.slider-buttons{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.slider-buttons_dot{
+    cursor: pointer;
+    width: 15px;
+    height: 15px;
+    border-radius: 9999px;
+    background: var(--text-primary);
+
+}
+.slider-buttons_dot-active{
+
+    width: 15px;
+    height: 15px;
+    border-radius: 9999px;
+    background: var(--primary-accent);
 }
 
 .search{
@@ -216,4 +225,32 @@
 }
 .catalog-button{
     background-color: var(--primary-accent);
+}
+.partners{
+    display: flex;
+    border-bottom: 1px solid var(--text-muted);
+    border-top: 1px solid var(--text-muted);
+    padding: 15px;
+}
+.partners-partner{
+    width: 33%;
+    height: 70px;
+}
+.nvidia{
+    background: url('/images/nvidia-logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.steam{
+    background: url('/images/steam-logo.png');
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.ubisoft{
+    background: url('/images/ubisoft-logo.avif');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
