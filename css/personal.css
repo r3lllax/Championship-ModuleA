@@ -53,7 +53,7 @@
     border-radius: 15px;
     margin-top: 50px;
     margin-bottom: 50px;
-    padding: 25px;
+    padding: 0px 25px 25px 25px;
 }
 
 .history{
@@ -118,4 +118,48 @@
 }
 .history-table_product-cost{
     color: var(--status-success);
+}
+.settings{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+}
+.settings-title{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.settings-buttons{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.settings-buttons_changePassword button{
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+}
+.settings-buttons_changeTheme{
+    display: flex;
+}
+.theme-button{
+    text-decoration: none;
+    border-radius: 5px;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    a{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+    }
+}
+.black{
+    background: #000;
+}
+.white{
+    background: #fff;
 }
