@@ -1,6 +1,6 @@
 :root{
     /* Primary */
-    --primary-accent:#7B61FF;
+    --primary-accent:#7b61ff;
     --primary-hover:#6A52E5;
     --primary-active:#5A44C7;
 
@@ -25,6 +25,9 @@
     src: url('/fonts/Inter/Inter-VariableFont_opszwght.ttf');
     font-weight: normal;
     font-style: normal;
+}
+.bgw{
+    background: #fff;
 }
 
 header{
