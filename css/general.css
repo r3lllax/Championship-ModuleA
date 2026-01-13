@@ -67,6 +67,10 @@ body{
     border: none;
     background: none;
     color: var(--text-primary);
+    a{
+        text-decoration: none;
+        color: var(--text-primary);
+    }
 }
 .button{
     cursor: pointer;
@@ -221,7 +225,7 @@ footer{
     span{
         color: var(--text-muted);
     }
-    input{
+    input,select{
         border: 1px solid var(--text-muted);
         border-radius: 5px;
         background:var(--bg-footer);
