@@ -2,6 +2,7 @@
     width: 100%;
     height: 200px;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     border-bottom: 1px solid var(--text-muted);
 }
@@ -9,10 +10,12 @@
     width: 80%;
 }
 .user-info_button{
-    width: 20%;
     display: flex;
-    justify-content: end;
     align-items: center;
+    button{
+        font-size: 20px;
+        padding: 5px 15px 5px 15px;
+    }
 }
 .user-info_info{
     display: flex;
@@ -36,29 +39,35 @@
     color: var(--text-secondary);
     font-size: 20px;
 }
-.user-info_button{
-    button{
-        font-size: 20px;
-        padding: 5px 15px 5px 15px;
-    }
-}
+
 
 
 .bgw{
     background: #fff;
 }
 .content{
-    width: 60%;
     background: var(--bg-footer);
     border-radius: 15px;
     margin-top: 50px;
     margin-bottom: 50px;
-    padding: 0px 25px 25px 25px;
+}
+@media (min-width:768px) {
+    .content{
+        width: 60%;
+        padding: 0px 25px 25px 25px;
+    }
+    .user-info{
+        flex-direction: row;
+    }
+    .user-info_button{
+        width: 20%;
+        justify-content: end;
+    }
 }
 
 .history{
     width: 100%;
-    padding: 25px;
+    padding: 25px 0;
     display: flex;
     flex-direction: column;
     align-items: start;
