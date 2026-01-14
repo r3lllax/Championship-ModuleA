@@ -226,8 +226,14 @@
     display: flex;
     gap: 5px;
 }
+@media (min-width:360px) {
+    .popular-games_games-item_content-rating{
+        flex-direction: row;
+    }
+}
 .popular-games_games-item_content-rating{
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
 }
