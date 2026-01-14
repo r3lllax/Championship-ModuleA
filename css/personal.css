@@ -12,9 +12,17 @@
 .user-info_button{
     display: flex;
     align-items: center;
+    justify-content: center;
+    padding: 15px 0;
     button{
         font-size: 20px;
         padding: 5px 15px 5px 15px;
+    }
+    
+}
+@media (min-width:768px) {
+    .user-info_button{
+        padding: 0;
     }
 }
 .user-info_info{
@@ -79,7 +87,6 @@
 }
 .history-table{
     width: 100%;    
-    border: 1px solid var(--text-muted);
     border-radius: 5px;
     overflow: hidden;
 }
@@ -104,8 +111,14 @@
 }
 .history-table_product{
     display: flex;
+    flex-direction: column;
     align-items: center;
     gap: 10px;
+}
+@media (min-width:768px) {
+    .history-table_product{
+        flex-direction: row;
+    }
 }
 .history-table_product-image img{
     width: 70px;

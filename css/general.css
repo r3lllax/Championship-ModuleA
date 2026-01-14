@@ -222,7 +222,7 @@ footer{
 
 .footer-top{
     border-bottom: 1px solid var(--text-muted);
-    border-top: 1px solid var(--text-muted);
+    
     width: 80%;
     padding-right: 15px;
     padding-left: 15px;
@@ -234,6 +234,7 @@ footer{
 
 @media(min-width:768px){
     .footer-top{
+        border-top: 1px solid var(--text-muted);
         flex-direction: row;
         height: 50px;
     }

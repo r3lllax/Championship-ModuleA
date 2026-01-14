@@ -22,18 +22,28 @@
 .form-bottom{
     width: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     gap: 50px;
+}
+
+@media (min-width:768px) {
+    .form-bottom{
+        flex-direction: row;
+    }
+    .form-left,.form-right{
+        width: 50%;
+    }
 }
 
 .form-left{
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 100%;
     gap: 10px;
 }
 .form-right{
-    width: 50%;
+    width: 100%;
     height: 100%;
     gap: 20px;
 }
@@ -107,6 +117,12 @@
     button{
         width: 200px;
         font-size: 20px;
-        align-self: self-start;
+    }
+}
+@media (min-width:768px) {
+    .form-buttons{
+        button{
+            align-self: self-start;
+        }
     }
 }
