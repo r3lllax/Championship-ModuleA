@@ -40,15 +40,11 @@ header{
 }
 @media(min-width:360px){
     header{
-        padding: 20px 20px 20px 20px;
+        padding: 20px 0px;
     }   
 }
 
-@media(max-width:768px){
-    header{
-        padding: 20px 0px;
-    } 
-}
+
 
 body{
     font-family: "Inter";
@@ -142,6 +138,14 @@ body{
 .header-burger img path{
     fill: var(--text-muted);
 }
+@media(max-width:768px){
+    header{
+        padding: 20px 0px;
+    } 
+    .header-logo{
+        width: 100%;
+    }
+}
 @media(min-width:768px){
     .header-buttons,.header-user{
         display: flex;
@@ -202,7 +206,7 @@ body{
 .container{
     width: 100%;
 }
-@media(min-width:360px) and (max-width:360px){
+@media(min-width:1920px){
     .container,.content{
         width: 80%;
         padding: 50px 10px 50px 10px;
